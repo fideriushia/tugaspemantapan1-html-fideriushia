@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Profil Statis - Fiderius Hia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Agency FB', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5dc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Menggunakan tag semantik main sebagai kartu profil */
+        main.profil-card {
+            background-color: #b2ebf2;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        header.profil-header {
+            margin-bottom: 15px;
+        }
+
+        header.profil-header img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        section.profil-bodi h2 {
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #333;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .gender-group {
+            margin: 12px 0;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        section.profil-bodi .role {
+            font-size: 16px;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            text-transform: capitalize;
+        }
+
+        section.profil-bodi .bio {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        nav.social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .btn-tiktok { background-color: #000000; }
+        .btn-gmail { background-color: #db4437; }
+        .btn-youtube { background-color: #ff0000; }
+
+        .social-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Menggunakan elemen semantik HTML5: main, header, section, nav -->
+    <main class="profil-card">
+        <header class="profil-header">
+            <img src="profil.jpg" alt="Foto Profil Fiderius">
+        </header>
+        
+        <section class="profil-bodi">
+            <h2>Nama : Fiderius Hia</h2>
+            <h2>NIM : 2501211446</h2>
+            <h2>Jurusan : Teknik Informatika</h2>
+            <h2>Email : fideriush@gmail.com</h2>
+            <h2>No. HP : 081269181558</h2>
+            
+            <div class="gender-group">
+                <label>
+                    <input type="radio" name="pilihan" checked> Pria
+                </label>
+                &nbsp;&nbsp;
+                <label>
+                    <input type="radio" name="pilihan"> Wanita
+                </label>
+            </div>
+
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Suka belajar membuat website yang menarik dan responsif dengan HTML & CSS.</p>
+
+            <nav class="social-links">
+                <a href="https://www.tiktok.com/@viderh" target="_blank" class="social-btn btn-tiktok">TikTok: Vider " hia.</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fideriush@gmail.com" target="_blank" class="social-btn btn-gmail">Email: fideriush@gmail.com</a>
+                <a href="https://www.youtube.com/@fideriushia" target="_blank" class="social-btn btn-youtube">YouTube: fiderius hia</a>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>
